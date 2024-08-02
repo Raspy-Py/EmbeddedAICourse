@@ -1,0 +1,46 @@
+coloredlogs==15.0.1
+contourpy==1.2.1
+cycler==0.12.1
+filelock==3.15.4
+flatbuffers==24.3.25
+fonttools==4.53.1
+fsspec==2024.6.1
+humanfriendly==10.0
+importlib-resources==6.4.0
+jinja2==3.1.4
+kiwisolver==1.4.5
+MarkupSafe==2.1.5
+matplotlib==3.9.1
+mpmath==1.3.0
+networkx==3.2.1
+numpy==1.26.4
+onnx==1.16.1
+onnxoptimizer==0.3.13
+onnxruntime==1.16.0
+packaging==24.1
+pillow==10.4.0
+protobuf==5.27.2
+psutil==6.0.0
+pyparsing==3.1.2
+python-dateutil==2.9.0.post0
+ruamel.yaml==0.18.6
+ruamel.yaml.clib==0.2.8
+six==1.16.0
+sympy==1.12.1
+tflite-runtime==2.13.0
+torch==2.3.1
+tqdm==4.66.4
+typing-extensions==4.12.2
+zipp==3.19.2
+
+# git clone --branch master --depth 1 --recurse-submodules --shallow-submodules https://github.com/opencv/opencv-python.git opencv-python-master
+# compilation options:
+#   export ENABLE_CONTRIB=0
+#   export ENABLE_HEADLESS=1
+#   export CMAKE_ARGS="-DWITH_GSTREAMER=ON"
+opencv-python @ file:///home/orangepi/temp/opencv_python-4.6.0%2B4638ce5-cp39-cp39-linux_aarch64.whl
+
+# git clone https://github.com/rockchip-linux/rknn-toolkit2 -b v1.6.0
+# dependencies:
+#   libxslt1-dev zlib1g-dev libglib2.0 libsm6 libgl1-mesa-glx libprotobuf-dev gcc cmake libhdf5-dev
+rknn-toolkit-lite2 @ file:///home/orangepi/temp/rknn-toolkit2/rknn_toolkit_lite2/packages/rknn_toolkit_lite2-1.6.0-cp39-cp39-linux_aarch64.whl
